@@ -1,0 +1,101 @@
+.footer {
+    margin-top: 80px;
+    background-color: #002a54f8;
+    color: white;
+}
+
+.footer a {
+    color: white;
+}
+
+.footer h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.footer h4 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.img-footer {
+    margin-top: 50px;
+    margin-bottom: -120px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80px;
+    height: 80px;
+}
+
+.img-footer img {
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}
+
+.box-atendimento {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.box-atendimento-h4 a {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.box-atendimento-h4 a:hover {
+    color: lightgrey;
+    transition: 1s;
+}
+
+.box-horario-h4 {
+    margin-left: 20px;
+}
+
+.box-endereço-h4 {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    margin-left: 20px;
+}
+
+@media (min-width: 651px) {
+    .footer {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        height: 25vh;
+        border-radius: 10px;
+        box-shadow: 2px 2px 5px black;
+        padding-bottom: 30px;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 650px) {
+    .footer {
+        padding-bottom: 70px;
+        box-shadow: 0px -2px 5px 5px #002A54;
+    }
+
+    .footer-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-top: 70px;
+        margin-left: 20px;
+    }
+}
+

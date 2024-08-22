@@ -1,0 +1,148 @@
+#header {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem;
+    height: 60px;
+    background-color: white;
+    border-bottom: 2px solid red;
+    align-items: center;
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    font-family: "Roboto", "sans serif";
+    font-weight: 300;
+    font-size: 1.2em;
+}
+
+.img-logo img {
+    width: 120px;
+    height: 40px;;
+}
+
+#menu {
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+#menu a {
+    display: block;
+    padding: 1rem;
+    color: #002A54;
+    text-decoration: none;
+}
+
+#btn-menu-mobile {
+    display: none;
+}
+
+/* Produtos dropdown */
+.produtos-dropdown {
+    display: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+    z-index: 1;
+    border-radius: 0px 0px 5px 5px;
+}
+
+@media (min-width: 651px) {
+    /* Produtos dropdown */
+    #nav-produto {
+        margin-top: 16px;
+        color: #002A54;
+        cursor: pointer;
+    }
+
+    .produtos-dropdown {
+        position: absolute;
+        top: 103%;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        width: 250px;
+    }
+}
+
+@media (max-width: 650px) {
+
+    /* Produtos dropdown */
+    #nav-produto {
+        text-align: center;
+        color: white;
+    }
+
+    .produtos-dropdown {
+        margin: 10px auto 0px auto;
+        border-bottom: 1px solid white;
+    }
+    /* Menu mobile */
+    #btn-menu-mobile {
+        display: flex;
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: none;
+        cursor: pointer;
+        color: yellow;
+    }
+
+    #menu {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 0;
+        top: 60px;
+        left: 0;
+        transition: height 0.5s ease, visibility 0.5s ease;
+        background-color: #000000d3;
+        z-index: 1000;
+        visibility: hidden;
+        overflow-y: hidden;
+    }
+
+    #nav.active #menu {
+        visibility: visible;
+        height: 100vh;
+        overflow-y: auto;
+    }
+
+    #menu a {
+        text-align: center;
+        display: block;
+        padding: 1rem;
+        color: white;
+    }
+
+    #ico-menu {
+        width: 20px;
+        border-top: 2px solid;
+        color: red;
+    }
+
+    #ico-menu::after, #ico-menu::before {
+        content: '';
+        display: block;
+        width: 20px;
+        height: 2px;
+        background: currentColor;
+        margin-top: 5px;
+        position: relative;
+    }
+
+    #nav.active #ico-menu {
+        border-top-color: transparent;
+    }
+
+    #nav.active #ico-menu::before {
+        transform: rotate(135deg);
+        transition: transform 0.5s ease;
+    }
+
+    #nav.active #ico-menu::after {
+        transform: rotate(-135deg);
+        transition: transform 0.5s ease;
+        top: -7px;
+    }
+}

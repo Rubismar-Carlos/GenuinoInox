@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="imagens/Home/Logo-G.png" type="Imagem logo">
+    <title>Genuino Inox</title>
+</head>
+<body>
+    <nav id="header">
+        <a href="#" target="_self" class="img-logo"><img src="imagens/Home/logo.png" alt="imagem"></a>
+        <section id="nav">
+            <button aria-label="Abrir Menu" id="btn-menu-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false">
+                <span id="ico-menu"></span>
+            </button>
+            <ul id="menu" role="menu">
+                <li><a href="#inicio" target="_self" onclick="closeMenu()">Inicio</a></li>
+                <section id="nav-produto" class="nav-produtos" onclick="openProdutos()">
+                    Produtos
+                    <img src="imagens/Home/icon-10px.png" alt="icon" id="icon">
+                </section>
+                <section class="produtos-dropdown" id="produtos-dropdown">
+                    <li><a href="corrimaoguardacorpo.html" target="_self" onclick="closeMenu()">Corrimão guarda corpo</a></li>
+                    <li><a href="corrimaoacessibilidade.html" target="_self" onclick="closeMenu()">Corrimão de acessibilidade</a></li>
+                    <li><a href="corrimaoparede.html" target="_self" onclick="closeMenu()">Corrimão para parede</a></li>
+                    <li><a href="corrimaocomvidro.html" target="_self" onclick="closeMenu()">Corrimão guarda corpo com vidro</a></li>
+                    <li><a href="sobmedida.html" target="_self" onclick="closeMenu()">Peças sob medidas</a></li>
+                </section>
+                <li><a href="#sobre" target="_self" onclick="closeMenu()">Sobre</a></li>
+            </ul>
+        </section>
+    </nav>
+
+    <main onclick="closeProdutos()">
+        <section class="home-apresentacao" id="inicio">
+            <section class="home-apresentacao-container">
+                <section class="home-aprexentacao-box">
+                    <h1>Elegância e Segurança em Inox</h1>
+                    <p>Corrimãos que transformam espaços com durabilidade e estilo. Projetados para proteger, feitos para impressionar.</p>
+                    <p>Explore nossos produtos e serviços personalizados para encontrar a solução perfeita para seu projeto.</p>
+                    <section>
+                        <a href="#produtos">
+                            <button>
+                                EXPLORAR
+                            </button>
+                        </a>
+                    </section>
+                </section>
+                <section class="home-aprexentacao-box2">
+                    
+                </section>
+            </section>
+        </section>
+        <section class="box-titulos" id="produtos">
+            <span class="span-titulo">PRODUTOS</span>
+        </section>
+        <section class="home-produtos">
+            <section class="produtos-container">
+                <section class="produtos-mobile-overflow">
+                    <section class="produtos-box">
+                        <a href="corrimaoguardacorpo.html" target="_self">
+                            <img src="imagens/Home/produtos-guardacorpo.png" alt="Guardacorpo de inox">
+                        </a>
+                    </section>
+                    <section class="produtos-box">
+                        <a href="corrimaoacessibilidade.html" target="_self">
+                            <img src="imagens/Home/produtos-acessibilidade.png" alt="Barramão de inox">
+                        </a>
+                    </section>
+                    <section class="produtos-box">
+                        <a href="corrimaoparede.html" target="_self">
+                            <img src="imagens/Home/produtos-parede.png" alt="Barramão de inox">
+                        </a>
+                    </section>
+                    <section class="produtos-box">
+                        <a href="corrimaocomvidro.html" target="_self">
+                            <img src="imagens/Home/produtos-guardacorpovidro.png" alt="Barramão de inox">
+                        </a>
+                    </section>
+                    <section class="produtos-box">
+                        <a href="sobmedida.html" target="_self">
+                            <img src="#" alt="Barramão de inox">
+                        </a>
+                    </section>
+                </section>
+            </section>
+        </section>
+        <section class="box-titulos" style="background-color: #002A54; padding-top: 10px; box-shadow: 0px -2px 10px 10px #002A54;" id="sobre">
+            <span class="span-titulo" style="color: white;">SOBRE NÓS</span>
+        </section>
+        <section class="home-empresa">
+            <section class="container-empresa">
+                <section class="empresa-box">
+                    <img src="imagens/Home/logo.png" alt="Logo empresa">
+                </section>
+                <section class="empresa-text">
+                    <p>Sua empresa especialista em corrimãos de inox e barras de apoio para pessoas PCD em Goiânia. Com um compromisso inabalável com a qualidade e a excelência, transformamos espaços com soluções que aliam segurança e elegância.</p>
+                    </br>
+                    <p>Desde o início de nossa jornada, temos nos dedicado a fornecer produtos que não apenas atendem às necessidades funcionais, mas também elevam o design e a estética dos ambientes. Nossos corrimãos e barras de apoio são projetados para oferecer o máximo de segurança e conforto, garantindo que cada projeto seja executado com precisão e com a mais alta qualidade.</p>
+                </section>
+            </section>
+        </section>
+        <section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d477.4940004863554!2d-49.31555491722046!3d-16.779063343810247!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935ef971bf55f153%3A0x2b4ce3b2ca4be!2sRgenuino%20Caixas%20Ac%C3%BAsticas!5e0!3m2!1spt-BR!2sbr!4v1723513355654!5m2!1spt-BR!2sbr" width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    </main>
+    <section class="img-footer">
+        <img src="imagens/Home/Logo-G.png" alt="Logo empresa">
+    </section>
+    <footer class="footer" onclick="closeProdutos()">
+        <section class="footer-container">
+            <section>
+                <h2>Atendimento</h2>
+                <section class="box-atendimento">
+                    <section class="box-atendimento-h4">
+                        <a href="https://api.whatsapp.com/send?phone=5562985121871&text=Gostaria%20de%20solicitar%20um%20orçamento." target="_blank">
+                            <img src="imagens/Home/whatsapp.png" alt="Imagem Whatsapp">
+                            <h4>(62) 98512-1871</h4>
+                        </a>
+                    </section>
+                    <section class="box-atendimento-h4">
+                        <a href="https://api.whatsapp.com/send?phone=5562985581880&text=Gostaria%20de%20solicitar%20um%20orçamento." target="_blank">
+                            <img src="imagens/Home/whatsapp.png" alt="Imagem Whatsapp">
+                            <h4>(62) 98558-1880</h4>
+                        </a>
+                    </section>
+                </section>
+            </section>
+
+            <section>
+                <h2>Horário de Atendimento</h2>
+                <section class="box-horario-h4">
+                    <h4>Segunda - Sexta-Feira: 08h às 18h</h4>
+                </section>
+            </section>
+
+            <section>
+                <a href="https://www.google.com/maps/place/Rgenuino+Caixas+Acústicas+-+Rua+Raimundo+Correia+qd+252+lt13+casa+02+Com+a,+R.+da+Quitanda+-+Jardim+Buriti+Sereno,+Aparecida+de+Goiânia+-+GO,+74945-215/@-16.7793341,-49.3155706,20z/data=!4m6!3m5!1s0x935ef971bf55f153:0x2b4ce3b2ca4be!8m2!3d-16.7793341!4d-49.3155706!16s%2Fg%2F11qn0j3r49" target="_blank">
+                    <h2>Endereço</h2>
+                    <section class="box-endereço-h4">
+                        <h4>Rua Raimundo Correia</h4>
+                        <h4>Qd. 252 Lt. 13 Cs. 02</h4>
+                        <h4>Jardim Buriti Sereno</h4>
+                        <h4>Aparecida de Goiânia - GO</h4>
+                    </section>
+                </a>
+            </section>
+        </section>
+    </footer>
+    <section class="container-whatsapp">
+        <section class="box-whatsapp">
+            <a href="https://api.whatsapp.com/send?phone=5562985121871&text=Gostaria%20de%20solicitar%20um%20orçamento." target="_blank">
+                <h5>Solicitar orçamento</h5>
+                <img src="imagens/Home/Whatsapp-big.png" alt="Imagem Whatsapp">
+            </a>
+        </section>
+    </section>
+    <script src="javascript/menuMobile.js"></script>
+</body>
+</html>
