@@ -5,7 +5,7 @@
     max-width: 1200px;
     margin-right: auto;
     margin-left: auto;
-    background-image: url("../imagens/Produtos/Guardacorpo/guarda-corpo-principal.jpeg");
+    background-image: url("../imagens/Produtos/Sobmedidas/peca2.jfif");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -282,6 +282,10 @@
 
     .box-slide img {
         height: 80vh;
+    }
+
+    .box-slide img {
+        width: 100%;
     }
 }
 
